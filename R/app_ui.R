@@ -14,7 +14,8 @@ app_ui <- function(request) {
       "A table showing the output of the iris dataset",
       tableOutput("irisOut"),
       br(),
-      plotOutput("irisGraph")
+      "A density plot showing the distribution of sepal length.",
+      plotOutput("irisGraph2")
     )
   )
 }

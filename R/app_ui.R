@@ -11,7 +11,10 @@ app_ui <- function(request) {
     # Your application UI logic
     fluidPage(
       h1("Example Shiny App"),
-      tableOutput("irisOut")
+      "A table showing the output of the iris dataset",
+      tableOutput("irisOut"),
+      br(),
+      plotOutput("irisGraph")
     )
   )
 }

@@ -28,6 +28,11 @@ golem::add_module(name = "name_of_module2", with_test = TRUE) # Name of the modu
 golem::add_fct("helpers", with_test = TRUE)
 golem::add_utils("helpers", with_test = TRUE)
 
+# Adding dependency packages
+usethis::use_package("dplyr")
+usethis::use_pipe()
+usethis::use_package("ggplot2")
+
 ## External resources
 ## Creates .js and .css files at inst/app/www
 golem::add_js_file("script")

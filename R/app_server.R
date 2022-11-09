@@ -6,4 +6,9 @@
 #' @noRd
 app_server <- function(input, output, session) {
   output$irisOut <- renderTable(iris)
+
+  irisPlot <- ggplot(iris, aes(Species, Sepal.Length)) +
+    geom_bar(stat = "identity")
+
+  output$irisGraph <- renderPlot(irisPlot)
 }
